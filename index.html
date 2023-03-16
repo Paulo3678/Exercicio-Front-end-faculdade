@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+
+    <link rel="stylesheet" href="./assets/css/custom.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <h1>Cadastro pessoal</h1>
+                    <figure>
+                        <img src="./assets/img/pessoa.png" alt="Icone de cadastro">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <form class="cad" action="" method="post">
+                        <div class="conteudo-principal">
+                            <div id="dados" class="bloco">
+                                <fieldset>
+                                    <legend><strong>Dados pessoais</strong></legend>
+
+                                    <div class="form-item">
+                                        <label for="nome">Nome:</label>
+                                        <input type="text" name="nome" id="nome">
+                                    </div>
+
+                                    <div class="form-item">
+                                        <label for="nasc">Nascimento:</label>
+                                        <input type="date" name="nasc" id="nasc">
+                                    </div>
+
+                                    <div class="form-item">
+                                        <label for="rg">RG:</label>
+                                        <input type="text" name="rg" id="rg">
+                                    </div>
+
+                                    <div class="form-item">
+                                        <label for="cpf">CPF:</label>
+                                        <input type="text" name="cpf" id="cpf">
+                                    </div>
+                                </fieldset>
+                            </div>
+
+                            <div class="bloco">
+                                <fieldset>
+                                    <legend><strong>Endereço</strong></legend>
+
+                                    <div class="form-item">
+                                        <label for="rua">Rua:</label>
+                                        <input type="text" name="rua" id="rua">
+                                    </div>
+
+                                    <div class="form-item">
+                                        <label for="Num">Nº:</label>
+                                        <input type="number" name="Num" id="Num">
+                                    </div>
+
+                                    <div class="form-item">
+                                        <label for="bairro">Bairro:</label>
+                                        <input type="text" name="bairro" id="bairro">
+                                    </div>
+
+                                    <div class="form-item">
+                                        <label for="estado">Estado:</label>
+                                        <input type="text" name="estado" id="estado">
+                                    </div>
+
+                                    <div class="form-item">
+                                        <label for="cidade">Cidade:</label>
+                                        <input type="text" name="cidade" id="cidade">
+                                    </div>
+
+                                    <div class="form-item">
+                                        <label for="cep">CEP:</label>
+                                        <input type="text" name="cep" id="cep">
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+
+                        <div>
+                            <fieldset>
+                                <legend><strong>Login</strong></legend>
+
+                                <div class="form-item">
+                                    <label for="login">Usuário:</label>
+                                    <input type="text" name="login" id="login">
+                                </div>
+
+                                <div class="form-item">
+                                    <label for="email">Email:</label>
+                                    <input type="email" name="email" id="email">
+                                </div>
+
+                                <div class="form-item">
+                                    <label for="senha">Senha:</label>
+                                    <input type="password" name="senha" id="senha">
+                                </div>
+
+                                <div class="form-item">
+                                    <label for="cSenha">Confirmar senha:</label>
+                                    <input type="password" name="cSenha" id="cSenha">
+                                </div>
+
+                                <div class="form-item">
+                                    <label for="perfil">Imagem de perfil: </label>
+                                    <input type="file" name="imagem" id="imagem">
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        <div class="botoes">
+                            <input type="submit" value="Enviar" class="btn btn-enviar">
+                            <input type="reset" name="Limpar" class="btn btn-resetar">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

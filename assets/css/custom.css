@@ -1,0 +1,166 @@
+:root {
+    --grey: #86A3B8;
+    --green: #38E54D;
+    --yellow: #FFDD83;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+html {
+    background-color: #f7f7f7;
+}
+
+/* MAIN */
+main .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: var(--grey);
+    margin-bottom: 20px;
+}
+
+main .card-header h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+}
+
+main .card-header img {
+    width: 70px;
+}
+
+main .card-content {
+    width: 1100px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+main .card-content .conteudo-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+main .card-content .conteudo-principal .bloco {
+    width: 49%;
+}
+
+main .card-content form legend {
+    background-color: var(--grey);
+    padding: 10px;
+    border-radius: 50px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+main .card-content form fieldset {
+    padding: 20px 30px;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+}
+
+main .card-content form .form-item {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+main .card-content form .form-item label {
+    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: .9rem;
+}
+
+main .card-content form .form-item input {
+    width: 100%;
+    padding: 10px 20px;
+}
+
+main .card-content form .botoes {
+    margin-top: 20px;
+}
+
+
+main .card-content form .botoes .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all .3s;
+}
+
+main .card-content form .botoes .btn:focus {
+    outline: none;
+}
+
+main .card-content form .botoes .btn:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transform: scale(1.03);
+}
+
+main .card-content form .botoes .btn.btn-enviar {
+    background-color: var(--green);
+    color: #fff;
+}
+
+main .card-content form .botoes .btn.btn-resetar {
+    background-color: var(--yellow);
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 1200px) {
+    main .card-content {
+        width: 992px;
+    }
+}
+
+@media (max-width: 1024px) {
+    main .card-content {
+        width: 768px;
+    }
+}
+
+@media (max-width: 992px) {
+    main .card-content {
+        width: 768px;
+        padding: 20px;
+    }
+
+    main .card-content .conteudo-principal {
+        flex-wrap: wrap;
+    }
+
+    main .card-content .conteudo-principal .bloco {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 992px) {
+    main .card-content {
+        width:100%;
+        padding: 40px 0px;
+    }
+    main .card-content form fieldset{
+        margin-bottom: 30px;
+    }
+}
